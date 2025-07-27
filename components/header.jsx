@@ -18,7 +18,7 @@ const Header = async () => {
         </Link>
 
         {/* Navigation Links - Desktop */}
-        <div className="hidden md:flex items-center space-x-8">
+        {/* <div className="hidden md:flex items-center space-x-8">
           <SignedOut>
             <a
               href="#features"
@@ -33,7 +33,12 @@ const Header = async () => {
               Testimonials
             </a>
           </SignedOut>
+        </div> */}
+
+        <div className="text-3xl font-bold tracking-[-0.06em]">
+          <span className="text-6xl tracking-[-0.03em] font-semibold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">S</span>AVI
         </div>
+
 
         {/* Action Buttons */}
         <div className="flex items-center space-x-3">
