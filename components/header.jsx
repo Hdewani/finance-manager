@@ -12,10 +12,15 @@ const Header = async () => {
   return (
     <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-200/50 shadow-sm">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2 group">
-          <img src="/logo (2).png" alt="logo" className="w-12 h-12 scale-145" />
-        </Link>
+        <div className="flex items-center space-x-3">
+          {/* Logo */}
+          <Link href="/" className="flex items-start space-x-2 group">
+            <img src="/logo (2).png" alt="logo" className="size-16" />
+          </Link>
+          <div className="text-2xl font-bold tracking-[-0.06em] mt-2">
+            <span className="text-4xl tracking-[-0.03em] font-semibold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">S</span>AVI
+          </div>
+        </div>
 
         {/* Navigation Links - Desktop */}
         {/* <div className="hidden md:flex items-center space-x-8">
@@ -35,13 +40,11 @@ const Header = async () => {
           </SignedOut>
         </div> */}
 
-        <div className="text-3xl font-bold tracking-[-0.06em]">
-          <span className="text-6xl tracking-[-0.03em] font-semibold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">S</span>AVI
-        </div>
+
 
 
         {/* Action Buttons */}
-        <div className="flex items-center space-x-3">
+        <div className="flex items-start space-x-3">
           <SignedIn>
             <Link
               href="/dashboard"
